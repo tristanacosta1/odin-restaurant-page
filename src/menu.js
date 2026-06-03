@@ -1,3 +1,5 @@
+import { content } from "./index.js";
+
 const menu = document.createElement("h1");
 
 const appetizers = document.createElement("h2");
@@ -50,4 +52,12 @@ dessertsList.appendChild(dessertsItemsOne);
 dessertsList.appendChild(dessertsItemsTwo);
 dessertsList.appendChild(dessertsItemsThree);
 
-export { menu, appetizers, mainCourses, desserts, appetizersList, mainCoursesList, dessertsList };
+export function viewMenu() {
+    content.appendChild(menu);
+    content.appendChild(appetizers);
+    content.appendChild(appetizersList);
+    content.appendChild(mainCourses);
+    content.appendChild(mainCoursesList);
+    content.appendChild(desserts);
+    content.appendChild(dessertsList)
+}
