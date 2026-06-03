@@ -1,11 +1,7 @@
-const content = document.querySelector("#content");
 const headline = document.createElement("h1");
-const someText = document.createElement("p");
+const homeText = document.createElement("p");
 
-headline.textContent = "The TOP Restaurant";
-someText.textContent = "The home to the most scrumptious meals in the town."
+headline.textContent = "The Odin Restaurant";
+homeText.textContent = "The home to the most scrumptious meals in the town.";
 
-content.appendChild(headline);
-content.appendChild(someText);
-
-export { content, headline, someText };
+export { headline, homeText };
